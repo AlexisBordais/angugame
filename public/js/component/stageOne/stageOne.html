@@ -1,0 +1,82 @@
+<style media="screen">
+  body{
+    background-image: url(./img/temple.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  #tbox {
+    background-color: white;
+    width: 340px;
+    position: absolute;
+    top: 219px;
+    left: 965px;
+  }
+
+  #btnbanana {
+    position: absolute;
+    left: 1225px;
+    top: 645px;
+    background-color: yellow;
+  }
+
+  #gostagetwo {
+    position: absolute;
+    background-color: white;
+    width: 340px;
+    left: 1184px;
+    top: 232px;
+  }
+
+</style>
+
+<body>
+  <div class="container" ng-if="x >= 70" style="background-color: white;">
+    <h4>Salut le gorille, si tu veux recuperer tes bananes il faudra répondre à cette énigme ! Quelle directive permet de cacher des éléments ?</h4>
+    <div class="row">
+
+      <div class="col-lg-4">
+      <h5>NG-MODEL</h5>
+      <button type="button" name="button">CHOISIR</button>
+      </div>
+
+      <div class="col-lg-4">
+        <h5>NG-HIDE</h5>
+        <a class="btn btn-primary"     name="button" ng-click="$ctrl.good = !$ctrl.good">CHOISIR</a>
+        <!-- je definie une variable et je pense a mettre $ctrl car je veux que cela soit rappeler en dehors de la div ds laquelle elle est definit -->
+      </div>
+
+      <div class="col-lg-4">
+        <h5>NG-ANIMATE</h5>
+        <button type="button" name="button">CHOISIR</button>
+      </div>
+
+    </div><!-- /.row -->
+
+
+  </div>
+
+  <div ng-if="$ctrl.good" id="tbox" ng-hide="$ctrl.banana">
+    <h3>AAAAaaaaaRRGGHHh !!!! Bravo...Tu m'as battu, tu peux récupérer tes bananes</h3>
+    <a class="btn btn-primary"     name="button" ng-click="$ctrl.banana = !$ctrl.banana">OK</a>
+  </div>
+
+  <div>
+    <a class="btn btn-primary" id="btnbanana" ng-if="$ctrl.banana" ng-click="$ctrl.stageTwo = !$ctrl.stageTwo" ng-hide="$ctrl.stageTwo">BOUTON BANANA</a>
+  </div>
+
+  <div id="gostagetwo" ng-if="$ctrl.stageTwo">
+    <h3>Bravo Kong ! Tu as battu le T-Rex. Tu peux maintenant te rendre au stage 2 !!</h3>
+    <a ui-sref="app.stageTwo" class="btn btn-primary" name="button" >STAGE 2</a>
+  </div>
+
+
+
+
+
+<controllers x="x"></controllers>
+  <gorilla x="x"></gorilla>
+
+  <trex ng-hide="$ctrl.banana"></trex>
+</body>
