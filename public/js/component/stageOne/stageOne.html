@@ -33,6 +33,7 @@
 
 <body>
   <div class="container" ng-if="x >= 70" style="background-color: white;">
+    <riddles-list></riddles-list>
     <h4>Salut le gorille, si tu veux recuperer tes bananes il faudra répondre à cette énigme ! Quelle directive permet de cacher des éléments ?</h4>
     <div class="row">
 
@@ -53,8 +54,6 @@
       </div>
 
     </div><!-- /.row -->
-
-
   </div>
 
   <div ng-if="$ctrl.good" id="tbox" ng-hide="$ctrl.banana">

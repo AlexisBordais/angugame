@@ -1,0 +1,37 @@
+[{
+    "question": "Quelle directive permet de cacher des éléments ?",
+    "responses": [{
+        "title": "NG-MODEL",
+        "correct": false
+    }, {
+        "title": "NG-HIDE",
+        "correct": true
+    }, {
+        "title": "NG-ANIMATE",
+        "correct": false
+    }]
+}, {
+    "question": "Pourquoi les gorilles ont de grosses narines ?",
+    "responses": [{
+        "title": "Ils ont de gros doigts",
+        "correct": true
+    }, {
+        "title": "Pour mieux respirer",
+        "correct": false
+    }, {
+        "title": "Pour le style",
+        "correct": false
+    }]
+}, {
+    "question": "Qu'est-ce que Angular JS ?",
+    "responses": [{
+        "title": "Angle en espagnol",
+        "correct": false
+    }, {
+        "title": "Un framework",
+        "correct": true
+    }, {
+        "title": "Ca n'existe pas!",
+        "correct": false
+    }]
+}]

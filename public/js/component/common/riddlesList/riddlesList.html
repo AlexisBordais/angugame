@@ -1,0 +1,8 @@
+<div class="container" style="background-color: white;" ng-repeat="riddle in $ctrl.riddles | limitTo: 1">
+  <h4>Salut le gorille, si tu veux recuperer tes bananes il faudra répondre à cette énigme ! {{riddle.question}}</h4>
+
+  <div class="col-lg-4" ng-repeat="response in riddle.responses">
+    <h5>{{response.title}}</h5>
+    <button type="button" name="button">CHOISIR</button>
+  </div>
+</div>
