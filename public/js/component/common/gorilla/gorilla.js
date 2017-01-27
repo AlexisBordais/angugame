@@ -61,4 +61,4 @@
             })
         }
     })
-})(angular.module('app.common'))
+})(require('angular').module('app.common'))

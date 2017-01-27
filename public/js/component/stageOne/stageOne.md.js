@@ -7,4 +7,4 @@
           template: '<stage-one></stage-one>'
       })
   }])
-})(angular.module('app.stageOne', []))
+})(require('angular').module('app.stageOne', []))

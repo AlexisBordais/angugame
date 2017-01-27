@@ -1,0 +1,9 @@
+# MacOS
+.DS_Store
+
+# Modules
+node_modules/
+
+# Built files by brunch
+public/css/
+public/**/*min*

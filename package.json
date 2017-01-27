@@ -1,0 +1,35 @@
+{
+  "name": "angugame",
+  "version": "1.0.0",
+  "description": "<!-- pour lancer l' appli : live-server' ou localhost 8080 -->",
+  "main": "index.js",
+  "scripts": {
+    "dev": "brunch watch | nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexisBordais/angugame.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexisBordais/angugame/issues"
+  },
+  "homepage": "https://github.com/AlexisBordais/angugame#readme",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-ui-router": "^0.4.2",
+    "auto-reload-brunch": "^2.7.1",
+    "babel-brunch": "^6.0.6",
+    "body-parser": "^1.15.2",
+    "brunch": "^2.10.4",
+    "clean-css-brunch": "^2.0.0",
+    "css-brunch": "^2.6.1",
+    "express": "^4.14.0",
+    "javascript-brunch": "^2.0.0",
+    "method-override": "^2.3.7",
+    "mongoose": "^4.7.6",
+    "morgan": "^1.7.0",
+    "sass-brunch": "^2.9.0"
+  }
+}

@@ -4,4 +4,4 @@
         templateUrl: 'js/component/stageOne/stageOne.html'
     })
 
-})(angular.module('app.stageOne'))
+})(require('angular').module('app.stageOne'))

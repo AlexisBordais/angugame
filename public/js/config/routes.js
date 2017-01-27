@@ -18,4 +18,4 @@ Create Angular config in app.config module
             template: '<ui-view></ui-view>'
         })
     }])
-})(angular.module('app.config'))
+})(require('angular').module('app.config'))

@@ -13,4 +13,4 @@
       //et mettre $state en parma ds le ctrlller
     }
   })
-})(angular.module('app.home'))
+})(require('angular').module('app.home'))

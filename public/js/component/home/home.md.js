@@ -7,4 +7,4 @@
             template: '<home></home>'
         })
     }])
-})(angular.module('app.home', []))
+})(require('angular').module('app.home', []))

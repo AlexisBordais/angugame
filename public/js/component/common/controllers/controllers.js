@@ -7,4 +7,4 @@
         templateUrl: 'js/component/common/controllers/controllers.html'
     })
 
-})(angular.module('app.common'))
+})(require('angular').module('app.common'))
