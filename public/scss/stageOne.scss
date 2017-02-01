@@ -1,0 +1,39 @@
+body{
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#tbox {
+  background-color: rgba(0, 0, 0, 0.47);
+  border-radius: 25px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  text-align: center;
+  width: 340px;
+  position: absolute;
+  top: 219px;
+  left: 965px;
+}
+
+#btnbanana {
+  position: absolute;
+  left: 1055px;
+  top: 570px;
+  background-image: url(/img/banana.gif);
+}
+
+#gostagetwo {
+  background-color: rgba(0, 0, 0, 0.47);
+  border-radius: 25px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  text-align: center;
+  position: absolute;
+  width: 340px;
+  left: 1184px;
+  top: 232px;
+}

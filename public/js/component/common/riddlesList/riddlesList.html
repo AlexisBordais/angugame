@@ -1,10 +1,11 @@
-<div class="container" style="background-color: white;" ng-if="!$ctrl.good">
-  <h4>Salut le gorille, si tu veux recuperer tes bananes il faudra répondre à cette énigme ! {{$ctrl.answer.question}}
+<div class="card row" ng-if="!$ctrl.good" id="riddlesCard">
+    <h3 class="card-title">Salut le gorille, si tu veux recuperer tes bananes il faudra répondre à cette énigme ! </br>
+      {{$ctrl.answer.question}}
     <!-- {{$ctrl.answer.question}} -->
-  </h4>
-
-  <div class="col-lg-4" ng-repeat="response in $ctrl.answer.responses">
-    <h5>{{response.title}}</h5>
-    <button type="button" name="button" ng-click="$ctrl.selectResponse(response)">CHOISIR</button>
-  </div>
+  </h3>
+    <div class="row" id="response">
+        <div class="col-lg-2" ng-repeat="response in $ctrl.answer.responses">
+            <button type="button" name="button" class="btn btn-warning" ng-click="$ctrl.selectResponse(response)">{{response.title}}</button>
+        </div>
+    </div>
 </div>

@@ -25,7 +25,10 @@
     require('angular-ui-router'),
     'app.common',
     'app.home',
+    'app.gameOver',
     'app.stageOne',
     'app.stageTwo',
-    'app.config'
+    'app.stageThree',
+    'app.config',
+    'app.factories'
 ]))

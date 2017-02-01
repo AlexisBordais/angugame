@@ -1,0 +1,35 @@
+<style media="screen">
+  body{
+    background-image: url(./img/forest2.gif);
+    background-size: cover;
+  }
+</style>
+
+<body>
+
+
+<div class="container" ng-if="x >= 70" >
+<riddles-list good="$ctrl.good"></riddles-list>
+<div ng-if="$ctrl.good" id="tbox" ng-hide="$ctrl.banana">
+  <h3>AAAAaaaaaRRGGHHh !!!! Bravo...Tu m'as battu, tu peux récupérer tes bananes</h3>
+  <a class="btn btn-primary"     name="button" ng-click="$ctrl.banana = !$ctrl.banana">OK</a>
+</div>
+
+<div>
+  <!-- <a id="btnbanana" ng-if="$ctrl.banana" ng-click="$ctrl.stageTwo = !$ctrl.stageTwo" ng-hide="$ctrl.stageTwo">BOUTON BANANA</a> -->
+</div>
+<a id="btnbanana" ng-if="$ctrl.banana" ng-click="$ctrl.stageTwo = !$ctrl.stageTwo" ng-hide="$ctrl.stageTwo"><img src="img/banana.gif" alt="" /></a>
+
+<div id="gostagetwo" ng-if="$ctrl.stageTwo">
+  <h3>Bravo Kong ! Tu as battu le T-Rex. Tu peux maintenant te rendre au stage 2 !!</h3>
+  <a ui-sref="app.stageTwo" class="btn btn-primary" name="button" >STAGE 2</a>
+</div>
+</div>
+
+
+
+
+
+<controllers x="x"></controllers>
+  <gorilla x="x"></gorilla>
+</body>

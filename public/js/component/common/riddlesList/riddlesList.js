@@ -2,10 +2,11 @@
     'use strict';
     app.component('riddlesList', {
         bindings: {
-            good: "="
+            good: "=",
+            badAnswer: "="
         },
         templateUrl: 'js/component/common/riddlesList/riddlesList.html',
-        controller: ['$http', 'factoriddle', function($http, factoriddle) {
+        controller: ['$http', 'factoriddle', 'factorigame', function($http, factoriddle, factorigame) {
 
             // $http.get('/angugame').then((response) => {
             //   this.riddles = response.data
@@ -26,6 +27,9 @@
                         return el.question !== this.answer.question
                     })
                     this.good = true
+                    factorigame.count++
+                } else {
+                  this.badAnswer = true
                 }
             }
 
